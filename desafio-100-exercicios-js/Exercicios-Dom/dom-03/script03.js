@@ -1,5 +1,5 @@
 const randomNumber = Math.floor(Math.random() * 100) + 1;
-verificar = () => {
+const verificar = () => {
   const adivinhe = document.getElementById('adivinhe-numero').value;
   const resultado = document.getElementById('resultado');
 
