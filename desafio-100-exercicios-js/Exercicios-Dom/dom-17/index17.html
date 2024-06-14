@@ -1,0 +1,74 @@
+<!--17. Crie uma página que simule uma calculadora com operações básicas e avançadas (potenciação e raiz quadrada).-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <style>
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .calculadora {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 300px;
+        }
+        .calculadora input[type="button"] {
+            width: 60px;
+            height: 40px;
+            font-size: 18px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .calculadora input[type="text"] {
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            text-align: right;
+            margin-bottom: 10px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+  </style>
+</head>
+<body>
+  <div class="calculadora">
+  <h2>Calculadora</h2>
+  <br>
+  <input type="text" id="display" readonly>
+  <br>
+  <input type="button" value="7" onclick="insert('7')">
+  <input type="button" value="8" onclick="insert('8')">
+  <input type="button" value="9" onclick="insert('9')">
+  <input type="button" value="/" onclick="insert('/')">
+  <br>
+  <input type="button" value="4" onclick="insert('4')">
+  <input type="button" value="5" onclick="insert('5')">
+  <input type="button" value="6" onclick="insert('6')">
+  <input type="button" value="*" onclick="insert('*')">
+  <br>
+  <input type="button" value="1" onclick="insert('1')">
+  <input type="button" value="2" onclick="insert('2')">
+  <input type="button" value="3" onclick="insert('3')">
+  <input type="button" value="-" onclick="insert('-')">
+  <br>
+  <input type="button" value="0" onclick="insert('0')">
+  <input type="button" value="." onclick="insert('.')">
+  <input type="button" value="=" onclick="calcular()">
+  <input type="button" value="+" onclick="insert('+')">
+  <br>
+  <input type="button" value="C" onclick="limpar()">
+  <input type="button" value="x²" onclick="potencia()">
+  <input type="button" value="√" onclick="raiz()">
+</div>
+  <script src="./script17.js"></script>
+</body>
+</html>

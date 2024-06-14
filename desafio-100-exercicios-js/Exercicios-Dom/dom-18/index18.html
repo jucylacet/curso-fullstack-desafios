@@ -1,0 +1,29 @@
+<!--18. Crie uma página que receba uma lista de produtos e preços, 
+calcule o total e aplique um desconto baseado em uma condição 
+(por exemplo, desconto de 10% se o total for maior que 100).-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Produtos e Preços</title>
+</head>
+<body> 
+  <div>
+  <h2>Calculadora de Compras</h2>
+  <label for="produtoInput">Produto:</label>
+  <input type="text" id="produtoInput">
+  <label for="precoInput">Preço:</label>
+  <input type="number" id="precoInput">
+  <button onclick="adicionarItem()">Adicionar Item</button>
+  <br><br>
+  <button onclick="calcularTotal()">Calcular Total</button>
+  <br><br>
+  <p id="listaProdutos"></p>
+  <p id="totalCompra"></p>
+  <p id="descontoAplicado"></p>
+  <p id="totalDescontado"></p>
+</div>
+  <script src="./script18.js"></script>
+</body>
+</html>
