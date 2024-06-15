@@ -1,6 +1,6 @@
 const verificar = () => {
   const numeros = document.getElementById('adivinhe-numero').value;
-  const array = numeros.split(',').map(num => parseInt(num.trim()));
+  const array = numeros.split(',');
 
   const minNumber = Math.min(...array);
   const maxNumber = Math.max(...array);
